@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('contact-form');
+  const loadingSvg = document.getElementById('loading-svg');
 
   form.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent default form submission
@@ -14,9 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('To',to);
     console.log('From',from);
-     console.log('email',email);
-      console.log('full name', fullname);
-      console.log('message', message);
+    console.log('email',email);
+    console.log('full name', fullname);
+    console.log('message', message);
 
     const apiUrl = `https://kanusoft.azurewebsites.net/api/EmailServiceContoller/SendMail?to=${to}&from=${from}&email=${email}&fullname=${fullname}&subject=${subject}&message=${message}`;
 
