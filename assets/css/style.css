@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Banner Section */
+#banner {
+    background-size: cover;
+    background-position: center;
+    height: auto; /* Adjust for mobile screens */
+    padding: 50px 0;
+}
+
+h1, h2, h4, h5 {
+    color: #fff; /* Text color for headers */
+}
+
+section {
+    padding: 50px 0; /* Spacing for all sections */
+}
+
+/* Service and Skills Lists */
+.list-group-item {
+    border: none; /* Remove border from list group */
+    font-size: 1.1rem; /* Slightly larger font for better readability */
+}
+
+ul ul { 
+    padding-left: 20px; /* Indent sub-lists */
+}
+
+/* Skills Section Colors */
+#skills {
+    background-color: #388E3C;
+}
+
+.list-group-item.bg-transparent {
+    background-color: transparent !important;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1B5E20;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Adjust banner text size for mobile */
+    }
+    h2 {
+        font-size: 1.75rem; /* Smaller headings for mobile */
+    }
+    ul {
+        padding-left: 0; /* Remove indentation on smaller screens */
+    }
+    .list-group-item {
+        font-size: 1rem; /* Adjust list item font size for better fit */
+    }
+}

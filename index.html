@@ -2,11 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+     <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evelyn Translation</title>   
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Evelyn Translation</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#career">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner" class="text-center text-white d-flex align-items-center justify-content-center" style="height: 60vh; background-color: #4CAF50;">
+        <div class="container">
+            <h1 class="display-4">Evelyn Translation Agency</h1>
+            <p class="lead">Over 20 years of translation expertise with fast and accurate delivery.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Translation Services</h2>
+            <p class="text-center">We specialize in translating from and to the following languages:</p>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Arabic</li>
+                <li class="list-group-item">Syriac (Classical and Colloquial - Aramaic/Assyrian)</li>
+                <li class="list-group-item">Kurdish</li>
+                <li class="list-group-item">Farsi</li>
+                <li class="list-group-item">Armenian</li>
+            </ul>
+            <p class="text-center">We offer services in translation, proofreading, editing, and voiceover acting in these languages.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5" style="background-color: #388E3C;">
+        <div class="container text-white">
+            <h2 class="text-center mb-4">Technical and Language Skills</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h4>Technical Skills</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent text-white">Language Tools: ParaText</li>
+                        <li class="list-group-item bg-transparent text-white">Microsoft Office: Word, Excel, PowerPoint</li>
+                        <li class="list-group-item bg-transparent text-white">Cloud Storage: Google Drive, One Drive</li>
+                        <li class="list-group-item bg-transparent text-white">Management Tools: Asana, Slack, Teams, Zoom</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Language Skills</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent text-white">English</li>
+                        <li class="list-group-item bg-transparent text-white">Arabic</li>
+                        <li class="list-group-item bg-transparent text-white">Syriac:</li>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-transparent text-white">Surayt/Turoyo (Mother-tongue)</li>
+                            <li class="list-group-item bg-transparent text-white">Classical Syriac (Eastern and Western)</li>
+                            <li class="list-group-item bg-transparent text-white">Surit/Suret/Sureth (Northeastern Neo-Aramaic)</li>
+                            <li class="list-group-item bg-transparent text-white">Suryon (Malouli Aramaic)</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Section -->
+    <section id="career" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Career Path</h2>
+            <h5>Freelance Translator (Nov 2020 - Present)</h5>
+            <p>Evelyn Translations, Burbank, CA.</p>
+            <ul>
+                <li>Translated documents, books, and scripts across multiple languages.</li>
+                <li>Provided voiceover acting for Syriac, Assyrian, Aramaic, Kurdish, Arabic, and Farsi languages.</li>
+                <li>Followed proper TEP process for high-quality translation, peer reviewing, and proofreading.</li>
+            </ul>
+
+            <h5>Aramaic Translator (Oct 2004 – Nov 2020)</h5>
+            <p>Aramaic Bible Translation, Chicago, IL.</p>
+            <ul>
+                <li>Built an audio home studio for Aramaic language recordings.</li>
+                <li>Completed full editing and proofreading of the Bible in Surayt using ParaText.</li>
+                <li>Contributed to several Aramaic translations (Syriac, Mardini, Malouli, and Turoyo).</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5" style="background-color: #2E7D32;">
+        <div class="container text-white">
+            <h2 class="text-center mb-4">Education & Volunteering</h2>
+            <h5>BS in English Literature, Minor in Aramaic Studies (2004)</h5>
+            <p>Aleppo University, Syria</p>
+
+            <h5>Volunteering Experience</h5>
+            <ul>
+                <li>BethMardutho.org, volunteer for language research committee (2018 - Present).</li>
+                <li>Freelance volunteer for global Syriac language translation efforts (2017 - Present).</li>
+                <li>Voiceover work for over 20 BET KANU songs and cartoon episodes for Syriac education.</li>
+                <li>Language volunteer at Rinyo Inc. (2013 - 2017).</li>
+                <li>Language training for St. Afrem church youth group in Chicago (2007 - 2010).</li>
+                <li>Managed and edited ancient Aramaic manuscripts for the Institute of Syriac Studies (2003 - 2005).</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Kanusoft LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
