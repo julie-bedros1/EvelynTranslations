@@ -4,97 +4,194 @@
     <meta charset="UTF-8">
      <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evelyn Translation</title>   
 </head>
 <body>
     <!-- Header -->
-    <header class="bg-dark text-white py-3">
+    <header class="bg-light text-white py-3">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#">Evelyn Translation</a>
+            <nav class="navbar navbar-expand-lg navmenu" id="navmenu">
+                <a class="navbar-brand" href="#"><img src="assets/Images/Main-Logo.jpg" alt="Image" class="img-fluid" width="60" height="14"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
+                        <li><a href="index.html" class="active">Home</a></li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
+                            <a class="nav-link" href="about.html">About Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#career">Career</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">Education</a>
-                        </li>
+                        <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                          <ul>
+                            <li><a href="#">Dropdown 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                              <ul>
+                                <li><a href="#">Deep Dropdown 1</a></li>
+                                <li><a href="#">Deep Dropdown 2</a></li>
+                                <li><a href="#">Deep Dropdown 3</a></li>
+                                <li><a href="#">Deep Dropdown 4</a></li>
+                                <li><a href="#">Deep Dropdown 5</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">Dropdown 2</a></li>
+                            <li><a href="#">Dropdown 3</a></li>
+                            <li><a href="#">Dropdown 4</a></li>
+                          </ul>
+                        </li> -->
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- Banner -->
-    <section id="banner" class="text-center text-white d-flex align-items-center justify-content-center" style="height: 60vh; background-color: #4CAF50;">
-        <div class="container">
-            <h1 class="display-4">Evelyn Translation Agency</h1>
-            <p class="lead">Over 20 years of translation expertise with fast and accurate delivery.</p>
-        </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Translation Services</h2>
-            <p class="text-center">We specialize in translating from and to the following languages:</p>
-            <ul class="list-group list-group-flush mb-4">
-                <li class="list-group-item">Arabic</li>
-                <li class="list-group-item">Syriac (Classical and Colloquial - Aramaic/Assyrian)</li>
-                <li class="list-group-item">Kurdish</li>
-                <li class="list-group-item">Farsi</li>
-                <li class="list-group-item">Armenian</li>
-            </ul>
-            <p class="text-center">We offer services in translation, proofreading, editing, and voiceover acting in these languages.</p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-5" style="background-color: #388E3C;">
-        <div class="container text-white">
-            <h2 class="text-center mb-4">Technical and Language Skills</h2>
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <h4>Technical Skills</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item bg-transparent text-white">Language Tools: ParaText</li>
-                        <li class="list-group-item bg-transparent text-white">Microsoft Office: Word, Excel, PowerPoint</li>
-                        <li class="list-group-item bg-transparent text-white">Cloud Storage: Google Drive, One Drive</li>
-                        <li class="list-group-item bg-transparent text-white">Management Tools: Asana, Slack, Teams, Zoom</li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <h4>Language Skills</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item bg-transparent text-white">English</li>
-                        <li class="list-group-item bg-transparent text-white">Arabic</li>
-                        <li class="list-group-item bg-transparent text-white">Syriac:</li>
-                        <ul class="list-group">
-                            <li class="list-group-item bg-transparent text-white">Surayt/Turoyo (Mother-tongue)</li>
-                            <li class="list-group-item bg-transparent text-white">Classical Syriac (Eastern and Western)</li>
-                            <li class="list-group-item bg-transparent text-white">Surit/Suret/Sureth (Northeastern Neo-Aramaic)</li>
-                            <li class="list-group-item bg-transparent text-white">Suryon (Malouli Aramaic)</li>
-                        </ul>
-                    </ul>
-                </div>
+   <!-- About  Section -->
+   <section id="about-2" class="about-2 section light-background">
+    <div class="container">
+      <div class="content">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 order-lg-2 offset-xl-1 mb-4">
+            <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
+              <div class="img">
+                <img src="assets/Images/Main-Logo.jpg" alt="circle image" class="img-fluid">
+              </div>
             </div>
+          </div>
+
+          <div class="offset-md-0 offset-lg-1 col-sm-12 col-md-5 col-lg-5 col-xl-4" data-aos="fade-up">
+            <div class="px-3">
+              <span class="content-subtitle">Welcome</span>
+              <h2 class="content-title text-start">
+                Evelyn Translation Agency
+              </h2>
+              <p class="lead">
+                Over 20 years of translation expertise with fast and accurate delivery.
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+  <!-- /About  Section -->
+   
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+        <div class="container">
+          <div class="row">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="col">
+              <div class="services-item" data-aos="fade-up">
+                <div class="services-icon">
+                  <i class="bi bi-bullseye"></i>
+                </div>
+                <div class="text-center">
+                  <h3>Arabic</h3>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="services-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="services-icon">
+                  <i class="bi bi-command"></i>
+                </div>
+                <div class="text-center">
+                  <h3>Syriac (Classical and Colloquial - Aramaic/Assyrian)</h3>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="services-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="services-icon">
+                  <i class="bi bi-bar-chart"></i>
+                </div>
+                <div class="text-center">
+                  <h3>Kurdish</h3>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+                <div class="services-item" data-aos="fade-up" data-aos-delay="200">
+                  <div class="services-icon">
+                    <i class="bi bi-bar-chart"></i>
+                  </div>
+                  <div class="text-center">
+                    <h3>Farsi</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="services-item" data-aos="fade-up" data-aos-delay="200">
+                  <div class="services-icon">
+                    <i class="bi bi-bar-chart"></i>
+                  </div>
+                  <div class="text-center">
+                    <h3>Farsi</h3>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="content-title mt-5">
+                We specialize in translating from and to the following languages:
+              </h2>
+              <p class="lead">
+                We offer services in translation, proofreading, editing, and voiceover acting in these languages.
+              </p>
+          </div>
+        </div>
+      </section>
+      <!-- Services  Section -->
+
+          <!-- Skills Section -->
+      <section id="services-2" class="services-2 section">
+
+        <div class="container">
+          <div class="row justify-content-between" data-aos="fade-up">   
+              <h2 class="text-center mb-4">Technical and Language Skills</h2>
+            <div class="col-md-6 col-lg-4">
+              <h2 class="content-title">
+               Technical Skills
+              </h2>
+              <ul class="list-group">
+                <li class="list-group-item bg-transparent "><strong>Language Tools: </strong>ParaText</li>
+                <li class="list-group-item bg-transparent "><strong>Microsoft Office</strong>Word, Excel, PowerPoint</li>
+                <li class="list-group-item bg-transparent "><strong>Cloud Storage: </strong>Google Drive, One Drive</li>
+                <li class="list-group-item bg-transparent "><strong>Management Tools: </strong>Asana, Slack, Teams, Zoom</li>
+            </ul>
+            </div>
+            <div class="col-md-6 col-lg-6 ps-lg-5">
+                <h2 class="content-title">
+                    Language Skills
+                   </h2>
+                   <ul class="list-group">
+                    <li class="list-group-item bg-transparent">English</li>
+                    <li class="list-group-item bg-transparent">Arabic</li>
+                    <li class="list-group-item bg-transparent">Syriac:</li>
+                    <li class="list-group">
+                        <li class="list-group-item bg-transparent">Surayt/Turoyo (Mother-tongue)</li>
+                        <li class="list-group-item bg-transparent">Classical Syriac (Eastern and Western)</li>
+                        <li class="list-group-item bg-transparent">Surit/Suret/Sureth (Northeastern Neo-Aramaic)</li>
+                        <li class="list-group-item bg-transparent">Suryon (Malouli Aramaic)</li>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Skills Section -->
+
 
     <!-- Career Section -->
-    <section id="career" class="py-5 bg-light">
+    <section id="career" class="career py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4">Career Path</h2>
             <h5>Freelance Translator (Nov 2020 - Present)</h5>
@@ -116,12 +213,11 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="py-5" style="background-color: #2E7D32;">
-        <div class="container text-white">
+    <section id="career" class="career py-5">
+        <div class="container">
             <h2 class="text-center mb-4">Education & Volunteering</h2>
             <h5>BS in English Literature, Minor in Aramaic Studies (2004)</h5>
             <p>Aleppo University, Syria</p>
-
             <h5>Volunteering Experience</h5>
             <ul>
                 <li>BethMardutho.org, volunteer for language research committee (2018 - Present).</li>
@@ -131,6 +227,8 @@
                 <li>Language training for St. Afrem church youth group in Chicago (2007 - 2010).</li>
                 <li>Managed and edited ancient Aramaic manuscripts for the Institute of Syriac Studies (2003 - 2005).</li>
             </ul>
+
+            
         </div>
     </section>
 
@@ -143,5 +241,6 @@
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
