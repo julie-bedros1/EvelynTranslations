@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
+    <link href="assets/swiper/swiper-bundle.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evelyn Translation</title>   
 </head>
@@ -22,9 +22,9 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li><a href="index.html" class="active">Home</a></li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="about.html">About Us</a>
-                        </li>
+                        </li> -->
                         <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                           <ul>
                             <li><a href="#">Dropdown 1</a></li>
@@ -48,43 +48,72 @@
         </div>
     </header>
 
+    <!-- About Section -->
+    <section id="about" class="about section">
 
-   <!-- About  Section -->
-   <section id="about-2" class="about-2 section light-background">
-    <div class="container">
-      <div class="content">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 order-lg-2 offset-xl-1 mb-4">
-            <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
-              <div class="img">
-                <img src="assets/Images/Main-Logo.jpg" alt="circle image" class="img-fluid">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2" data-aos="fade-up" data-aos-delay="400">
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 1
+                    }
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/Images/Main-Logo.jpg" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/Images/Main-Logo.jpg" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/Images/Main-Logo.jpg" alt="Image" class="img-fluid">
+                </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
-
-          <div class="offset-md-0 offset-lg-1 col-sm-12 col-md-5 col-lg-5 col-xl-4" data-aos="fade-up">
-            <div class="px-3">
-              <span class="content-subtitle">Welcome</span>
-              <h2 class="content-title text-start">
-                Evelyn Translation Agency
-              </h2>
-              <p class="lead">
-                Over 20 years of translation expertise with fast and accurate delivery.
-              </p>
-            </div>
+          <div class="col-lg-4 order-lg-1">
+            <span class="section-subtitle" data-aos="fade-up">Welcome</span>
+            <h1 class="mb-4" data-aos="fade-up">
+              Evelyn Translation Agency
+            </h1>
+            <p data-aos="fade-up">
+              Over 20 years of translation expertise with fast and accurate delivery.
+            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- /About  Section -->
+    </section><!-- /About Section -->
+
    
     <!-- Services Section -->
     <section id="services" class="services section light-background">
 
         <div class="container">
           <div class="row">
-            <h2 class="text-center mb-4">Our Services</h2>
+            <h2 class="text-center mb-5">Our Services</h2>
             <div class="col">
               <div class="services-item" data-aos="fade-up">
                 <div class="services-icon">
@@ -151,49 +180,13 @@
       </section>
       <!-- Services  Section -->
 
-          <!-- Skills Section -->
-      <section id="services-2" class="services-2 section">
-
-        <div class="container">
-          <div class="row justify-content-between" data-aos="fade-up">   
-              <h2 class="text-center mb-4">Technical and Language Skills</h2>
-            <div class="col-md-6 col-lg-4">
-              <h2 class="content-title">
-               Technical Skills
-              </h2>
-              <ul class="list-group">
-                <li class="list-group-item bg-transparent "><strong>Language Tools: </strong>ParaText</li>
-                <li class="list-group-item bg-transparent "><strong>Microsoft Office</strong>Word, Excel, PowerPoint</li>
-                <li class="list-group-item bg-transparent "><strong>Cloud Storage: </strong>Google Drive, One Drive</li>
-                <li class="list-group-item bg-transparent "><strong>Management Tools: </strong>Asana, Slack, Teams, Zoom</li>
-            </ul>
-            </div>
-            <div class="col-md-6 col-lg-6 ps-lg-5">
-                <h2 class="content-title">
-                    Language Skills
-                   </h2>
-                   <ul class="list-group">
-                    <li class="list-group-item bg-transparent">English</li>
-                    <li class="list-group-item bg-transparent">Arabic</li>
-                    <li class="list-group-item bg-transparent">Syriac:</li>
-                    <li class="list-group">
-                        <li class="list-group-item bg-transparent">Surayt/Turoyo (Mother-tongue)</li>
-                        <li class="list-group-item bg-transparent">Classical Syriac (Eastern and Western)</li>
-                        <li class="list-group-item bg-transparent">Surit/Suret/Sureth (Northeastern Neo-Aramaic)</li>
-                        <li class="list-group-item bg-transparent">Suryon (Malouli Aramaic)</li>
-                    </li>
-                </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-    <!-- Skills Section -->
+  
 
 
     <!-- Career Section -->
-    <section id="career" class="career py-5 bg-light">
+    <section id="career" class="career py-5 t">
         <div class="container">
-            <h2 class="text-center mb-4">Career Path</h2>
+            <h2 class="text-center mb-5">Career Path</h2>
             <h5>Freelance Translator (Nov 2020 - Present)</h5>
             <p>Evelyn Translations, Burbank, CA.</p>
             <ul>
@@ -211,26 +204,79 @@
             </ul>
         </div>
     </section>
+        <!-- Skills Section -->
+        <section id="services-2" class="services-2 section  light-background">
 
-    <!-- Education Section -->
-    <section id="career" class="career py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Education & Volunteering</h2>
-            <h5>BS in English Literature, Minor in Aramaic Studies (2004)</h5>
-            <p>Aleppo University, Syria</p>
-            <h5>Volunteering Experience</h5>
-            <ul>
-                <li>BethMardutho.org, volunteer for language research committee (2018 - Present).</li>
-                <li>Freelance volunteer for global Syriac language translation efforts (2017 - Present).</li>
-                <li>Voiceover work for over 20 BET KANU songs and cartoon episodes for Syriac education.</li>
-                <li>Language volunteer at Rinyo Inc. (2013 - 2017).</li>
-                <li>Language training for St. Afrem church youth group in Chicago (2007 - 2010).</li>
-                <li>Managed and edited ancient Aramaic manuscripts for the Institute of Syriac Studies (2003 - 2005).</li>
-            </ul>
+          <div class="container">
+            <div class="row justify-content-between" data-aos="fade-up">   
+                <h2 class="text-center mb-5">Technical and Language Skills</h2>
+              <div class="col-md-6 col-lg-4">
+                <h2 class="content-title">
+                 Technical Skills
+                </h2>
+                <ul class="list-group">
+                  <li class="list-group-item bg-transparent "><strong>Language Tools: </strong>ParaText</li>
+                  <li class="list-group-item bg-transparent "><strong>Microsoft Office</strong>Word, Excel, PowerPoint</li>
+                  <li class="list-group-item bg-transparent "><strong>Cloud Storage: </strong>Google Drive, One Drive</li>
+                  <li class="list-group-item bg-transparent "><strong>Management Tools: </strong>Asana, Slack, Teams, Zoom</li>
+              </ul>
+              </div>
+              <div class="col-md-6 col-lg-6 ps-lg-5">
+                  <h2 class="content-title">
+                      Language Skills
+                     </h2>
+                     <ul class="list-group">
+                      <li class="list-group-item bg-transparent">English</li>
+                      <li class="list-group-item bg-transparent">Arabic</li>
+                      <li class="list-group-item bg-transparent">Syriac:</li>
+                      <li class="list-group">
+                          <li class="list-group-item bg-transparent">Surayt/Turoyo (Mother-tongue)</li>
+                          <li class="list-group-item bg-transparent">Classical Syriac (Eastern and Western)</li>
+                          <li class="list-group-item bg-transparent">Surit/Suret/Sureth (Northeastern Neo-Aramaic)</li>
+                          <li class="list-group-item bg-transparent">Suryon (Malouli Aramaic)</li>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      <!-- Skills Section -->
+        <!-- About  Section -->
+      <section id="career" class="career py-5">
+          <div class="container">
+            <h2 class="text-center mb-5">Education & Volunteering</h2>
+            <div class="content">
+              <div class="row justify-content-between align-items-between">
+                <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 order-lg-2 offset-xl-1 mb-4">
+                  <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
+                    <div class="img">
+                      <img src="assets/Images/Main-Logo.jpg" alt="circle image" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-6" data-aos="fade-up">
+                  <div class="px-3">
+             
+                    <h5>BS in English Literature, Minor in Aramaic Studies (2004)</h5>
+                    <p>Aleppo University, Syria</p>
+                    <h5>Volunteering Experience</h5>
+                    <ul>
+                        <li>BethMardutho.org, volunteer for language research committee (2018 - Present).</li>
+                        <li>Freelance volunteer for global Syriac language translation efforts (2017 - Present).</li>
+                        <li>Voiceover work for over 20 BET KANU songs and cartoon episodes for Syriac education.</li>
+                        <li>Language volunteer at Rinyo Inc. (2013 - 2017).</li>
+                        <li>Language training for St. Afrem church youth group in Chicago (2007 - 2010).</li>
+                        <li>Managed and edited ancient Aramaic manuscripts for the Institute of Syriac Studies (2003 - 2005).</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /About  Section -->
 
-            
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
@@ -242,5 +288,6 @@
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
