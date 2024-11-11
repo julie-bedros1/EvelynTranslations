@@ -303,20 +303,7 @@ h6 {
     z-index: 9997;
   }
 
-  .navmenu ul {
-    display: none;
-    list-style: none;
-    position: absolute;
-    inset: 60px 20px 20px 20px;
-    padding: 10px 0;
-    margin: 0;
-    border-radius: 6px;
-    background-color: var(--nav-mobile-background-color);
-    overflow-y: auto;
-    transition: 0.3s;
-    z-index: 9998;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-  }
+
 
   .navmenu a,
   .navmenu a:focus {
@@ -649,7 +636,11 @@ h6 {
   }
   .services-2 .content-title{
     margin-top: 30px;
-    margin-bottom:  1px !important;
+    margin-bottom:  30px !important;
+  }
+  .grid-logo{
+    border-top: 1px solid #ccd4de;
+    border-bottom: 1px solid #ccd4de;
   }
 }
 
@@ -713,12 +704,9 @@ section,
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
-.section-title {
-}
 
 .section-title {
-  font-weight: 600;
-  margin-bottom: 0;   
+  font-weight: 600; 
    margin-bottom: 3rem !important;   
     text-align: center !important;
 }
@@ -1509,8 +1497,24 @@ section,
 
 @media (max-width: 992px) {
   .grid-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
+  .navmenu ul {
+    list-style: none;
+    inset: 60px 20px 20px 20px;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 6px;
+    background-color: var(--nav-mobile-background-color);
+    overflow-y: auto;
+    transition: 0.3s;
+    z-index: 9998;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  }
+  .grid-logo {
+    border-top: 1px solid #ccd4de;
+    border-bottom: 1px solid #ccd4de;
+}
 }
 
 @media (max-width: 576px) {
@@ -1522,7 +1526,7 @@ section,
 .column-block__content-appended-elements .module__grid{
   align-items: stretch;
 }
-}
+
 @media (max-width: 575px) {
 
   .portfolio-details .swiper-button-prev,
@@ -2459,7 +2463,6 @@ section,
 }
 
 .grid-logo {
-  height: calc(100% + 30px);
   position: relative;
   text-align: center;
   border-right: 1px solid #ccd4de;
