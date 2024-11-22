@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #946c52; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #146c43; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -148,12 +148,14 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
-.header {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 20px 0;
-  transition: all 0.5s;
-  z-index: 997;
+header {
+  background-color: transparent !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the header stays above other elements */
+  border-bottom: none;
 }
 
 .header .logo {
@@ -199,7 +201,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: var(--background-color);
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
@@ -221,12 +223,6 @@ h6 {
 
   .navmenu li:last-child a {
     padding-right: 0;
-  }
-
-  .navmenu li:hover>a,
-  .navmenu .active,
-  .navmenu .active:focus {
-    color: var(--nav-hover-color);
   }
 
   .navmenu .dropdown ul {
@@ -303,11 +299,9 @@ h6 {
     z-index: 9997;
   }
 
-
-
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: #fff;
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
@@ -743,6 +737,8 @@ section,
 .about p {
   line-height: 1.7;
   color: var(--default-color);
+
+
 }
 
 .about .swiper-pagination {
@@ -750,23 +746,26 @@ section,
   bottom: 30px;
 }
 
-.about .swiper-pagination .swiper-pagination-bullet {
+.swiper-pagination .swiper-pagination-bullet {
   margin: 0 5px;
-  background: #ffffff;
-  opacity: 0.3;
+  background: var(--background-color);
+  opacity: 0.3;     width: 20px;
+  height: 20px;    transform: scale(0.574);
 }
 
-.about .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: var(--accent-color);
-  opacity: 1;
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--background-color);
+  opacity: 1;   
+   transform: scale(1);  
+
 }
 
-.about .section-subtitle {
+.section-subtitle {
   font-size: 27px;
   font-weight: 700;
   margin-bottom: 10px;
   display: block;
-  color: var(--default-color);
+  color: var(--heading-color);
 }
 
 /*--------------------------------------------------------------
@@ -1337,7 +1336,7 @@ section,
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: var(--accent-color);
+  background: var(--background-color);
   opacity: 1;
 }
 
@@ -1480,7 +1479,7 @@ section,
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -2468,4 +2467,59 @@ section,
   border-right: 1px solid #ccd4de;
   border-left: 1px solid #ccd4de;
   padding: 35px 20px 40px;
+}
+
+/* Position the text inside the slider */
+.slider-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+  text-align: start;
+  color: #fff;
+  z-index: 10;
+}
+
+.slider-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  color: var(--background-color);
+}
+
+.slider-content p {
+  font-size: 1.2rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  color: var(--background-color);
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+/* Ensure images take full slide space */
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Adjust slider container */
+.swiper {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-pagination {
+  bottom: 10px; /* Adjust pagination position */
+}
+.swiper-wrapper .swiper-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  opacity: .4;
 }
