@@ -328,7 +328,7 @@
   content: "next";
 }
 .swiper-pagination {
-  position: absolute;
+ position: relative; 
   text-align: center;
   transition: 0.3s opacity;
   transform: translate3d(0, 0, 0);
@@ -345,7 +345,7 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: var(--swiper-pagination-bottom, 100px);
+  bottom: var(--swiper-pagination-bottom, 0px);
   top: var(--swiper-pagination-top, auto);
   left: 0;
   width: 100%;

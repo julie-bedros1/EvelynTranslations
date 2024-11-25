@@ -24,7 +24,7 @@
   --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #146c43; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --contrast-color: #81a293; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -636,6 +636,18 @@ header {
     border-top: 1px solid #ccd4de;
     border-bottom: 1px solid #ccd4de;
   }
+  .slider-content h1 {
+    font-size:1.1rem!important;
+    margin-bottom: 1rem!important;
+    font-weight: bold;
+  }
+  
+  .slider-content p {
+    font-size:1rem!important;
+  }
+  header{
+    position: relative;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -748,13 +760,13 @@ section,
 
 .swiper-pagination .swiper-pagination-bullet {
   margin: 0 5px;
-  background: var(--background-color);
+  background: var(--contrast-color);
   opacity: 0.3;     width: 20px;
   height: 20px;    transform: scale(0.574);
 }
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: var(--background-color);
+  background: var(--accent-color);
   opacity: 1;   
    transform: scale(1);  
 
@@ -2473,8 +2485,7 @@ section,
 .slider-content {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-100%, -50%);
+  left: 16%;
   text-align: start;
   color: #fff;
   z-index: 10;
@@ -2522,4 +2533,15 @@ section,
   left: 0;
   background: #000;
   opacity: .4;
+}
+.elementor-element{
+  max-width: 487px;
+  --container-widget-width: 487px;
+  --container-widget-flex-grow: 0;
+  column-gap: 0px;
+  color: #0E1336;
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
 }
