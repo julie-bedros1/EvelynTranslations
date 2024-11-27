@@ -2555,7 +2555,7 @@ section,
     background: #f9f9f9;
     padding: 20px 40px;
     font-family: montserrat;
-    font-size: 12px;
+    font-size: 16px;
     color: #555;
     border: 0;
     -webkit-border-radius: 40px;
@@ -2579,8 +2579,8 @@ section,
   outline: none;
   border: none;
   padding: 20px;
-  color: black;
-  background: #146c43 ;
+  color: var(--background-color);
+  background: var(--accent-color) ;
   font-size: large;
 }
 .contact-form textarea {
@@ -2589,4 +2589,8 @@ section,
 #loading-svg img, #loadingQuote-svg img{
   width: 42px;
   height: 26px;
+}
+.close{
+  border: none;
+  outline: none;
 }

@@ -35,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     .then(response => {
       if (response.ok) {
-        // $('#ContactModal').modal('show');
+        const modal = new bootstrap.Modal(document.getElementById('ContactModal'));
+        modal.show();
         form.reset(); // Reset the form
       } else {
         console.error('Failed to send email.');
