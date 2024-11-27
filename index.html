@@ -419,25 +419,24 @@
   <h4 class="lead">CONTACT FORM</h4>
 
   <form class="contact-form" id="contact-form" method="post">
-      <input type="hidden" name="toEmail" value="">
-
+      <!-- <input type="hidden" name="toEmail" value=""> -->
       <div class="row">
           <div class="col-md-6">
-              <input name="name" id="name" placeholder="Full Name" type="text">
+              <input name="fullname" id="fullname" placeholder="Full Name" type="text">
               <input name="email" id="email" placeholder="Email Address" type="email" >
-              <input name="subject" id="subject" placeholder="Subject" type="text"></textarea>
+              <input name="Subject" id="Subject" placeholder="Subject" type="text"></textarea>
           </div>
-          <div class="col-md-6"><textarea name="Message" id="Message" placeholder="Message" type="text"></textarea></div>
+          <div class="col-md-6"><textarea name="message" id="message" placeholder="Message" type="text"></textarea></div>
           <div class="col-md-12">
-            <button class="full-btn button w-100 d-flex align-content-center justify-content-center">Send Message
+            <button type="submit" class="full-btn button w-100 d-flex align-content-center justify-content-center">Send Message
             <div id="loading-svg" style="display: none;">
               <img src="assets/Images/icons/loader.svg"></img>
-                </div>
-
+            </div>
           </button>
         </div>
       </div>
-  <input name="" type="hidden" value=""></form>
+</form>
+
 </div>
    <!-- The Modal -->
    <div class="modal" id="ContactModal">

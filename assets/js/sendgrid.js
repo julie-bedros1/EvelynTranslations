@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault(); // Prevent default form submission
 
     const formData = new FormData(form);
-    const to = '';//
+    const to = 'marine.krikorian.4@gmail.com';
     const from = 'Evelyn-Translation';
     const fullname = formData.get('fullname');
     const email = formData.get('email');
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     .then(response => {
       if (response.ok) {
-        $('#ContactModal').modal('show');
+        // $('#ContactModal').modal('show');
         form.reset(); // Reset the form
       } else {
         console.error('Failed to send email.');
