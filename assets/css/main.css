@@ -2131,7 +2131,7 @@ section,
   color: var(--default-color);
   background-color: var(--surface-color);
   box-shadow: none;
-  border-color: var(--accent-color);
+  border:none;
 }
 
 .comment-form form input::placeholder {
@@ -2543,4 +2543,50 @@ section,
   font-size: 18px;
   line-height: 30px;
   font-weight: 500;
+}
+.contact-form input, .contact-form textarea {
+  margin-bottom: 20px;
+  font-family: arimo;
+  font-size: 12px;
+  color: #374953;
+  float: left;
+    width: 100%;
+    height: 60px;
+    background: #f9f9f9;
+    padding: 20px 40px;
+    font-family: montserrat;
+    font-size: 12px;
+    color: #555;
+    border: 0;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    border-radius: 40px;
+}
+.Contuct-section{
+  margin: 0 auto;
+}
+.button {
+  outline: none;
+  border: none;
+  padding: 20px;
+  color: white;
+  background: #212529;
+  font-size: large;
+}
+.button:hover {
+  outline: none;
+  border: none;
+  padding: 20px;
+  color: black;
+  background: #146c43 ;
+  font-size: large;
+}
+.contact-form textarea {
+  min-height: 140px;
+}
+#loading-svg img, #loadingQuote-svg img{
+  width: 42px;
+  height: 26px;
 }
