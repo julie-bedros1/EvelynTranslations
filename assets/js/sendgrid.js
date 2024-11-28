@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('contact-form');
   const loadingSvg = document.getElementById('loading-svg');
+  const sendText = document.getElementById('send-text');
 
   form.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent default form submission
 
     const formData = new FormData(form);
-    const to = 'marine.krikorian.4@gmail.com';
+    const to = 'akkadsaadi@gmail.com';
     const from = 'Evelyn-Translation';
     const fullname = formData.get('fullname');
     const email = formData.get('email');
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Show loading SVG
     loadingSvg.style.display = 'block';
+    sendText.style.display = 'none';
 
     fetch(apiUrl, {
       method: 'POST',
@@ -49,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     .finally(() => {
       // Hide loading SVG after modal is shown
       loadingSvg.style.display = 'none';
+      sendText.style.display = 'block';
     });
   });
 });
