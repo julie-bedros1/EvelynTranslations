@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const formData = new FormData(form);
     const to = 'akkadsaadi@gmail.com';
-    const from = 'Evelyn-Translation';
+    const from = 'Evelyntranslations.com';
     const fullname = formData.get('fullname');
     const email = formData.get('email');
     const subject = formData.get('Subject');

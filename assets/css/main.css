@@ -620,7 +620,21 @@ header {
   visibility: visible;
   opacity: 1;
 }
-
+@media screen and (max-width: 580px){
+  .slider-content{
+    top: 40%!important;
+    left: 10%!important;
+  }
+  .slider-content h1 {
+    font-size:1rem!important;
+    margin-bottom: 1rem!important;
+    font-weight: bold;
+  }
+  
+  .slider-content p {
+    font-size:0.7rem!important;
+  }
+}
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -643,7 +657,7 @@ header {
   }
   
   .slider-content p {
-    font-size:1rem!important;
+    font-size:1rem;
   }
   header{
     position: relative;
@@ -1509,6 +1523,7 @@ section,
 @media (max-width: 992px) {
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
   }
   .navmenu ul {
     list-style: none;
@@ -2485,7 +2500,7 @@ section,
 .slider-content {
   position: absolute;
   top: 50%;
-  left: 16%;
+  left: 8%;
   text-align: start;
   color: #fff;
   z-index: 10;
