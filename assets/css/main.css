@@ -212,7 +212,7 @@ header {
     white-space: nowrap;
     transition: 0.3s;
   }
-
+ 
   .navmenu a i,
   .navmenu a:focus i {
     font-size: 12px;
@@ -298,10 +298,11 @@ header {
     padding: 0;
     z-index: 9997;
   }
-
+  .navmenu .navbar-brand{
+    padding: 0!important;
+  }
   .navmenu a,
   .navmenu a:focus {
-    color: #fff;
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
@@ -334,11 +335,7 @@ header {
     color: var(--contrast-color);
   }
 
-  .navmenu a:hover,
-  .navmenu .active,
-  .navmenu .active:focus {
-    color: var(--nav-hover-color);
-  }
+ 
 
   .navmenu .active i,
   .navmenu .active:focus i {
@@ -651,7 +648,7 @@ header {
     border-bottom: 1px solid #ccd4de;
   }
   .slider-content h1 {
-    font-size:1.1rem!important;
+    font-size:1rem!important;
     margin-bottom: 1rem!important;
     font-weight: bold;
   }
@@ -2467,8 +2464,8 @@ section,
   font-size: 14px;
 }
 
-.career ul{
-  list-style-type: disclosure-closed;
+.career ul, .about ul{
+  list-style-type: revert;
 }
 .services-2 ul {
   list-style-type: disclosure-closed;
